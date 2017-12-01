@@ -1,11 +1,11 @@
-const arrString = ((arr) =>{
-  if(Array.isArray(arr)){
-    let ans = arr.filter((x)=> {
-      if(typeof x === 'string'){
-        return x;
+const arrString = ((inputArray) =>{
+  if (Array.isArray(inputArray)){
+    let filteredArray = inputArray.filter((item)=> {
+      if(typeof item === 'string'){
+        return item;
       }
     })
-    return ans;
+    return filteredArray;
   }else{
     return "Argument is not an Array";
   }  
