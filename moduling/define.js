@@ -7,9 +7,5 @@ const checkArray = (args) => {
   }
 };
 
-
-// Export gives error (unexpected token) - 
-// export const checkArray;
-
-//this works however.
+//export module/function
 module.exports = checkArray;
