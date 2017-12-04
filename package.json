@@ -4,6 +4,7 @@
   "description": "PrototypeAndela",
   "main": "index.js",
   "scripts": {
+    "render": "node ./moduling/render.js",
     "log:value": "node scripts/logging-values",
     "log:function": "node scripts/logging-functions"
   },
