@@ -1,2 +1,2 @@
-let password = 'Dreamteam';
+const password = 'Dreamteam';
 console.log(password);

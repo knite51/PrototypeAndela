@@ -4,7 +4,6 @@
   "description": "PrototypeAndela",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "log:value": "node scripts/logging-values",
     "log:function": "node scripts/logging-functions"
   },
