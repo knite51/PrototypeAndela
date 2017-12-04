@@ -4,7 +4,12 @@
   "description": "PrototypeAndela",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "render": "node ./moduling/render.js"
+=======
+    "log:value": "node scripts/logging-values",
+    "log:function": "node scripts/logging-functions"
+>>>>>>> develop
   },
   "repository": {
     "type": "git",
