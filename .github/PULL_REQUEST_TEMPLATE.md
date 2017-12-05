@@ -1,6 +1,15 @@
-### Reason for Pull Request
+#### What does this PR do?
 
+#### Description of Tasks to be completed?
 
-#### Worked On By:
--
--
+#### How should this be manually tested?
+
+#### Any background context you want to provide?
+
+#### What are the relevant pivotal tracker stories?
+
+#### Screenshots (if appropriate)
+
+#### Blockers (if any)
+
+#### Questions:
