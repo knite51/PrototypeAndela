@@ -8,4 +8,4 @@ const checkArray = (args) => {
 };
 
 //export module/function
-module.exports = checkArray;
+export default checkArray;

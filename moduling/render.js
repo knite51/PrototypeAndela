@@ -1,5 +1,5 @@
 //import the module using require function and specify module path
-const checkArray = require("./define.js");
+import checkArray from './define';
 
 //call function and store output 
 const result = checkArray([1,2,3]);
