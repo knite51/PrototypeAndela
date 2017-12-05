@@ -6,3 +6,4 @@ const result = checkArray([1,2,3]);
 
 //log output into the console.
 console.log(result);
+var home = 1
