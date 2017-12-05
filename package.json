@@ -4,7 +4,7 @@
   "description": "PrototypeAndela",
   "main": "index.js",
   "scripts": {
-    "render": "node ./moduling/render.js",
+    "render": "node_modules/.bin/babel-node ./moduling/render.js",
     "log:value": "node scripts/logging-values",
     "log:function": "node scripts/logging-functions"
   },
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/knite51/PrototypeAndela/issues"
   },
-  "homepage": "https://github.com/knite51/PrototypeAndela#readme"
+  "homepage": "https://github.com/knite51/PrototypeAndela#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1"
+  }
 }
