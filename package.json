@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/knite51/PrototypeAndela#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "eslint": "^4.9.0",
     "eslint-config-airbnb-base": "^12.1.0",
