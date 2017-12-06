@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const test = (inputValue1, inputValue2) => {
   return (3 * inputValue1) + (4 * inputValue2);
 };

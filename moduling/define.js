@@ -2,9 +2,8 @@
 const checkArray = (args) => {
   if (Array.isArray(args)) {
     return args;
-  } else {
-    return `Invalid parameter type ${typeof args} supplied`;
   }
+  return `Invalid parameter type ${typeof args} supplied`;
 };
 
 // export module/function

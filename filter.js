@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const arrString = ((inputArray) => {
   if (Array.isArray(inputArray)) {
     const filteredArray = inputArray.filter((item) => {
@@ -6,7 +7,6 @@ const arrString = ((inputArray) => {
       }
     });
     return filteredArray;
-  } else {
-    return 'Argument is not an Array';
-  }  
+  }
+  return 'Argument is not an Array';
 });

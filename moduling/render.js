@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 // import the module using require function and specify module path...
 import checkArray from './define';
 // call function and store output
