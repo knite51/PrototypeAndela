@@ -6,7 +6,8 @@
   "scripts": {
     "render": "node_modules/.bin/babel-node ./moduling/render.js",
     "log:value": "node scripts/logging-values",
-    "log:function": "node scripts/logging-functions"
+    "log:function": "node scripts/logging-functions",
+    "lint": "node_modules/.bin/eslint || true"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,9 @@
   },
   "homepage": "https://github.com/knite51/PrototypeAndela#readme",
   "devDependencies": {
-    "babel-preset-env": "^1.6.1"
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.7.0"
   }
 }

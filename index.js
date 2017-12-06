@@ -10,7 +10,6 @@ class ShoppingCart {
     } else {
       this.items[itemName] = quantity;
     }
-
   }
   removeItem(itemName, quantity, price) {
     this.total -= price * quantity;
@@ -24,10 +23,9 @@ class ShoppingCart {
     let balance = cashPaid - this.total;
     if (balance >= 0) {
       return balance;
-    } else {
-      balance = "Cash paid not enough";
-      return balance;
     }
+    balance = 'Cash paid not enough';
+    return balance;
   }
 }
 
