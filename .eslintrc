@@ -2,7 +2,8 @@
   "extends": "airbnb-base",
   "rules": {
     "linebreak-style": 0,
-    "arrow-body-style":"off"
+    "arrow-body-style":"off",
+    "import/no-unresolved": [0]
   },
   "env":{
     "mocha": true 
