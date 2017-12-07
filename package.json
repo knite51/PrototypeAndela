@@ -7,7 +7,7 @@
     "render": "node_modules/.bin/babel-node ./moduling/render.js",
     "log:value": "node scripts/logging-values",
     "log:function": "node scripts/logging-functions",
-    "lint": "node_modules/.bin/eslint || true",
+    "lint": "node_modules/.bin/eslint ./ || true",
     "test": "mocha --compilers js:babel-core/register ./src/tests/ || true"
   },
   "repository": {
