@@ -1,4 +1,4 @@
-class ShoppingCart {
+export class ShoppingCart {
   constructor() {
     this.total = 0;
     this.items = {};
@@ -7,17 +7,15 @@ class ShoppingCart {
     this.total += price * quantity;
     if (this.items[itemName] !== undefined) {
       this.items[itemName] += quantity;
-    } else {
-      this.items[itemName] = quantity;
     }
+    this.items[itemName] = quantity;
   }
   removeItem(itemName, quantity, price) {
     this.total -= price * quantity;
-    if (this.items.itemName) {
+    if (this.items[itemName] !== undefined) {
       this.items[itemName] -= quantity;
-    } else {
-      delete this.items[itemName];
     }
+    return `${itemName} does not exist`;
   }
   checkout(cashPaid) {
     let balance = cashPaid - this.total;
@@ -29,7 +27,7 @@ class ShoppingCart {
   }
 }
 
-class Shop extends ShoppingCart {
+export class Shop extends ShoppingCart {
   constructor() {
     super();
     this.quantity = 100;
@@ -39,4 +37,3 @@ class Shop extends ShoppingCart {
   }
 }
 
-export default Shop;
