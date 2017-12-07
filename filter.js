@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 export const arrString = ((inputArray) => {
   if (Array.isArray(inputArray)) {
     const filteredArray = inputArray.filter((item) => {
