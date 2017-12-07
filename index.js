@@ -5,14 +5,14 @@ export class ShoppingCart {
   }
   addItem(itemName, quantity, price) {
     this.total += price * quantity;
-    if (this.items[itemName] !== undefined) {
-      this.items[itemName] += quantity;
+    if (this.items.itemName) {
+      this.items.itemName += quantity;
     }
     this.items[itemName] = quantity;
   }
   removeItem(itemName, quantity, price) {
     this.total -= price * quantity;
-    if (this.items[itemName] !== undefined) {
+    if (this.items[itemName]) {
       this.items[itemName] -= quantity;
     }
     return `${itemName} does not exist`;
