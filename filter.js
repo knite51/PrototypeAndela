@@ -2,9 +2,7 @@
 export const arrString = ((inputArray) => {
   if (Array.isArray(inputArray)) {
     const filteredArray = inputArray.filter((item) => {
-      if (typeof item === 'string') {
-        return item;
-      }
+      return (typeof item === 'string') && item;
     });
     return filteredArray;
   }

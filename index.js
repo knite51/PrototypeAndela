@@ -13,7 +13,7 @@ class ShoppingCart {
   }
   removeItem(itemName, quantity, price) {
     this.total -= price * quantity;
-    if (this.items.hasOwnProperty(itemName)) {
+    if (this.items.itemName) {
       this.items[itemName] -= quantity;
     } else {
       delete this.items[itemName];
@@ -35,7 +35,8 @@ class Shop extends ShoppingCart {
     this.quantity = 100;
   }
   removeItem() {
-    this.quantity--;
+    this.quantity -= 1;
   }
 }
 
+export default Shop;
