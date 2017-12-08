@@ -8,9 +8,9 @@
     "log:value": "node scripts/logging-values",
     "log:function": "node scripts/logging-functions",
     "lint": "node_modules/.bin/eslint ./ || true",
-    "test": "mocha --require babel-core/register ./src/tests/ || true",
-    "coverage": "babel-node ./node_modules/istanbul/lib/cli cover _mocha ./src/tests/",
-    "report-coverage": "cat ./coverage/lcov.info | coveralls"
+    "test": "nyc --reporter=html --reporter=text mocha --require babel-core/register ./src/tests/ || true",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "report-coverage": "nyc --reporter=lcov --reporter=text-lcov npm test"
   },
   "repository": {
     "type": "git",
@@ -33,8 +33,8 @@
     "eslint": "^4.9.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.7.0",
-    "istanbul": "^0.4.5",
-    "mocha": "^4.0.1"
+    "mocha": "^4.0.1",
+    "nyc": "^11.3.0"
   },
   "dependencies": {
     "expect": "^21.2.1"
