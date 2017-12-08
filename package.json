@@ -8,7 +8,7 @@
     "log:value": "node scripts/logging-values",
     "log:function": "node scripts/logging-functions",
     "lint": "node_modules/.bin/eslint ./ || true",
-    "test": "mocha --compilers js:babel-core/register ./src/tests/ || true"
+    "test": "mocha --require babel-core/register ./src/tests/ || true"
   },
   "repository": {
     "type": "git",
