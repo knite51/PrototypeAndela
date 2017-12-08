@@ -8,7 +8,9 @@
     "log:value": "node scripts/logging-values",
     "log:function": "node scripts/logging-functions",
     "lint": "node_modules/.bin/eslint ./ || true",
-    "test": "mocha --require babel-core/register ./src/tests/ || true"
+    "test": "mocha --require babel-core/register ./src/tests/ || true",
+    "coverage": "babel-node ./node_modules/istanbul/lib/cli cover _mocha ./src/tests/",
+    "report-coverage": "cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
@@ -27,9 +29,11 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "coveralls": "^3.0.0",
     "eslint": "^4.9.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.7.0",
+    "istanbul": "^0.4.5",
     "mocha": "^4.0.1"
   },
   "dependencies": {
